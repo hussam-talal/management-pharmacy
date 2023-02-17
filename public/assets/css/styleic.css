@@ -1,0 +1,459 @@
+html {
+	height: 100%;
+    
+}
+body {
+	background-color: #dbdfe2;
+	color: rgb(0, 0, 0);
+	font-family: 'Mada', sans-serif;
+	font-size: 1rem;
+	height: 100%;
+	line-height: 1.5;
+	overflow-x: hidden;
+    text-align:center ;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    height: 40px;
+}
+.login-body {
+    display: table;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+.login-wrapper {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+    background-color: #ffffff;
+}
+.main-wrapper {
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+}
+.login-wrapper .loginbox {
+    background-color: #fff;
+	display: flex;
+    margin: 1.875rem auto;
+    max-width: 800px;
+    min-height: 500px;
+    width: 100%;
+}
+
+.login-wrapper .loginbox .login-left {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 400px;
+    border-radius: 5px 100px 100px 5px;
+    background-color: rgb(253, 245, 253);
+    box-shadow: 0 0 15px rgba(88, 21, 99, 0.61);
+}
+
+a{
+    color:#0d0111;
+    text-decoration: none;
+}
+.login-wrapper .loginbox .login-left .forgotpass a {
+	color: #a0a0a0;
+}
+.login-wrapper .loginbox .login-left .forgotpass a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.login-wrapper .loginbox .login-left .dont-have {
+	color: #adadad;
+	margin-top: 1.875rem;
+}
+.login-wrapper .loginbox .login-left.dont-have a {
+	color: rgb(2, 2, 2);
+}
+.login-wrapper .loginbox .login-left .dont-have a:hover {
+	text-decoration: underline;
+    color: #000;
+}
+
+
+.login-wrapper .loginbox .login-right {
+    align-items: center;
+    background: linear-gradient(180deg, #16011f, #5e0866);
+    border-radius: 100px 5px 5px 100px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    width: 400px;
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    padding-right: 65px;
+    box-shadow: 0 0 15px rgba(89, 21, 99, 0.932);
+}
+input[name=password],input[name=email],input[name=password_confirmation]{
+text-align:left ;
+
+}
+input[name=password]::placeholder ,input[name=email]::placeholder,input[name=password_confirmation]::placeholder{
+    text-align:right ;
+    
+    }
+pl
+.login-wrapper .loginbox .login-left {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 400px;
+}
+.login-wrapper .loginbox .login-left .login-left-wrap {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.login-wrapper .loginbox .login-right h1 {
+    font-size:50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+.btn-primary {
+	background-color: #47035c;
+    border: 1px solid #250625;
+}
+.btn-primary:hover
+{
+	background-color:#5b1d6e;
+	border: 1px solid #250625;
+}
+
+.form-control:focus {
+    color: #000000;
+    background-color: white;
+    border-color: #47035c;
+    outline: 0;
+    box-shadow: none;
+}
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+
+ .primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color:#5b1d6e;
+	border: 1px solid #250625;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color:#5b1d6e;
+	border: 1px solid #250625;
+    box-shadow: none;
+}
+.header {
+	background: #5b1d6e;
+	border-bottom: 3px solid #000000;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1001;
+	height: 60px;
+   
+}
+.header .header-right {
+	float: right;
+	height: 60px;
+	padding: 8px;
+	position: relative;
+	text-align:start;
+	width: 270px;
+	z-index: 1;
+	transition: all 0.2s ease-in-out;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.header .header-right .logo img {
+    height:35px;
+    width: 35px;
+
+    
+}
+.user-menu {
+    float:left;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+    
+}
+
+.user-menu.nav > li > a {
+    color: rgb(255, 250, 250);
+    font-size: 20px;
+    line-height: 58px;
+    padding: 0 15px;
+    height: 60px;
+    text-decoration: none;  
+}
+
+.user-menu.nav > li > a .badge {
+    background-color: #000407;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    min-height: 15px;
+    min-width: 15px;
+    position: absolute;
+   left: 3px;
+    color: #fff;
+    top: 6px;}
+    .badge-pill {
+        padding-right: 0.6em;
+        padding-left: 0.6em;
+        border-radius: 10rem;
+    }
+    #toggle_btn {
+        align-items: center;
+        color: rgb(247, 241, 241);
+        display: inline-flex;
+        float: right;
+        font-size: 30px;
+        height: 60px;
+        justify-content: center;
+        margin-left: 15px;
+        padding: 0 15px;
+    }
+    .sidebar {
+        background-color: #5b1d6e;
+        bottom: 0;
+       right: 0;
+        margin-top: 0;
+        position: fixed;
+        top: 60px;
+        transition: all 0.2s ease-in-out 0s;
+        width: 243px;
+        z-index: 1001;
+    }
+    .sidebar.opened {
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    .sidebar-inner {
+        height: 100%;
+        min-height: 100%;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    .sidebar-menu {
+        padding: 10px;
+    }
+    .sidebar-menu ul {
+        font-size: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .sidebar-menu li a {
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        height: auto;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+    .sidebar-menu li a:hover {
+        color: #000;
+    }
+    .sidebar-menu > ul > li > a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    .sidebar-menu > ul > li.active > a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    .sidebar-menu li.active a {
+        background-color: #000;
+        color: #fff;
+    }
+    .header .dropdown-toggle:after {
+        display: none;
+    }
+    .menu-title {
+        color: #ebebeb;
+        display: flex;
+        font-size: 18px;
+        opacity: 1;
+        padding: 5px 15px;
+        white-space: nowrap;
+    }
+    .menu-title > i {
+        float: right;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .sidebar-menu li.menu-title a {
+        color: #ff9b44;
+        display: inline-block;
+        margin-right: auto;
+        padding: 0;
+    
+    }
+    .sidebar-menu li.menu-title a.btn {
+        color: #fff;
+        display: block;
+        float: none;
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+    }
+    .sidebar-menu ul ul a.active {
+        color: #000;
+        text-decoration: underline;
+    }
+    .mobile_btn {
+    
+        float: right;
+    }
+    .sidebar .sidebar-menu > ul > li > a span {
+        transition: all 0.2s ease-in-out 0s;
+        display: inline-block;
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+    .sidebar .sidebar-menu > ul > li > a span.chat-user {
+        margin-right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .sidebar .sidebar-menu > ul > li > a span.badge {
+        margin-right: auto;
+    }
+    .sidebar-menu ul ul a {
+        display: block;
+        font-size: 20px;
+        padding: 7px 10px 7px 45px;
+        position: relative;
+    }
+    .sidebar-menu ul ul {
+        display: none;
+    }
+    .sidebar-menu ul ul ul a {
+        padding-left: 65px;
+    }
+    .sidebar-menu ul ul ul ul a {
+        padding-left: 85px;
+    }
+    .sidebar-menu > ul > li {
+        margin-bottom: 3px;
+        position: relative;
+    }
+    .sidebar-menu > ul > li:last-child {
+        margin-bottom: 0;
+    }
+    .sidebar-menu .menu-arrow {
+        -webkit-transition: -webkit-transform 0.15s;
+        -o-transition: -o-transform 0.15s;
+        transition: transform .15s;
+        position: absolute;
+        left: 15px;
+        display: inline-block;
+        font-family: 'FontAwesome';
+        text-rendering: auto;
+        line-height: 40px;
+        font-size: 20px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        line-height: 18px;
+        top: 11px;
+    }
+    .sidebar-menu .menu-arrow:before {
+        content: "\f104";
+    }
+    .sidebar-menu li a.subdrop .menu-arrow {
+        
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .sidebar-menu ul ul a .menu-arrow {
+        top: 10px;
+    }
+    .sidebar-menu > ul > li > a {
+        align-items: center;
+        border-radius: 3px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 8px 15px;
+        position: relative;
+        transition: all 0.2s ease-in-out 0s;
+        color: #f1f1f1;
+        
+    }
+    .sidebar-menu ul li a i {
+        display: inline-block;
+        font-size: 27px;
+        line-height: 24px;
+        text-align: right;
+        vertical-align: middle;
+        width: 20px;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    .sidebar-menu ul li.menu-title a i {
+        font-size: 20px !important;
+        margin-right: 0;
+        text-align: right;
+        width: auto;
+    }
+    .sidebar-menu li a > .badge {
+        color: #fff;
+        
+    }
+    .user-menu .dropdown-menu {
+        min-width: 200px;
+        padding: 0;
+    }
+    .dropdown-menu.show {
+        display: block;
+    }
+    .dropdown-menu {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        transform-origin: left top 0;
+        box-shadow: inherit;
+        background-color: #fff;
+    }
+    .user-menu.nav > li > a:hover, .user-menu.nav > li > a:focus {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .header .dropdown-toggle:after {
+        display: none;
+    }
+    .dropdown-menu.show {
+        position: absolute;
+        transform: translate3d(-102px, 60px, 0px);
+        top: 0px;
+        right: 0px;
+        will-change: transform;
+    }
+    
